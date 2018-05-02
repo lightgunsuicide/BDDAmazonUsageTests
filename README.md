@@ -14,5 +14,5 @@ Since we are using a .net framework project rather than .netcore, in this projec
 Things I had hoped to demonstrate with this project:
 * Ideal gherkin user/test case writing, with a minimum of sentences used to describe a large portion of functionality at the highest level at which it can be explained
 * Factory object pattern for ease of implementing the page object pattern
-* IoC and DI to de-couple hard implementations from this use in test cases
+* IoC and DI to de-couple hard implementations from their use in test cases
 
