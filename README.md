@@ -8,7 +8,7 @@ The **BDDTests** project contains gherkin script files (**specflow** Feature fil
 
 Specflow has been configured to use **xunit** to allow potential parallel running of tests. This is not a fundamental requirement but xunit and its running console were the best choices as they allow this functionality in the future. 
 
-Since we are using a .net framework project rather than .netcore, in this project **ninject** was used to cover **dependency injection**. A directory called Ioc (Inversion of Control) contains the classes that deal with binding to a container. This allows us to de-couple the implementation of page classes. In the case of this project this allows us, for example, to use several different classes to implement different homepages for amazon (such as for different regions or languages) and run the same tests. 
+Since we are using a .net framework project rather than .netcore, in this project **ninject** was used to cover **dependency injection**. A directory called IoC (Inversion of Control) contains the classes that deal with binding to a container. This allows us to de-couple the implementation of page classes. In the case of this project this allows us, for example, to use several different classes to implement different homepages for amazon (such as for different regions or languages) and run the same tests. 
 
 ## Demonstrating Behaviour Driven Development and software engineering principles
 Things I had hoped to demonstrate with this project:
