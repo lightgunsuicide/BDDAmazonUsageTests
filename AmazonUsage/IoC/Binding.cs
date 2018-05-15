@@ -1,4 +1,4 @@
-﻿using BDD.IoC.Interfaces;
+﻿using Dependencies.Interfaces;
 using Framework.PageClasses;
 using Ninject.Modules;
 

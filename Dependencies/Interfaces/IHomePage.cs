@@ -1,4 +1,4 @@
-﻿namespace Framework.PageClasses.Interfaces
+﻿namespace Dependencies.Interfaces
 {
     public interface IHomePage
     {

@@ -1,4 +1,4 @@
-﻿namespace BDD.IoC.Interfaces
+﻿namespace Dependencies.Interfaces
 {
     public interface ISearchResults
     {

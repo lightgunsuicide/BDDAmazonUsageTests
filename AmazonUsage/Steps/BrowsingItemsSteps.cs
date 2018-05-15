@@ -1,7 +1,7 @@
 ﻿using System;
 using OpenQA.Selenium;
 using TechTalk.SpecFlow;
-using BDD.IoC.Interfaces;
+using Dependencies.Interfaces;
 using FluentAssertions;
 using System.Collections.Generic;
 using System.Configuration;

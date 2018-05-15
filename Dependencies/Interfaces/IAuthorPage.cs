@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Framework.PageClasses.Interfaces
+namespace Dependencies.Interfaces
 {
     public interface IAuthorPage
     {

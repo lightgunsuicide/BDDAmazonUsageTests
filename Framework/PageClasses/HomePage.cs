@@ -1,5 +1,5 @@
 ﻿using System;
-using Framework.PageClasses.Interfaces;
+using Dependencies.Interfaces;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 

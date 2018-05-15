@@ -1,5 +1,5 @@
 ﻿using System;
-using Framework.PageClasses.Interfaces;
+using Dependencies.Interfaces;
 
 namespace Framework.PageClasses
 {

@@ -88,11 +88,6 @@
     </Compile>
     <Compile Include="Hooks.cs" />
     <Compile Include="IoC\Binding.cs" />
-    <Compile Include="IoC\Interfaces\HomePage.cs" />
-    <Compile Include="IoC\Interfaces\IAuthorPage.cs" />
-    <Compile Include="IoC\Interfaces\ICategoryPage.cs" />
-    <Compile Include="IoC\Interfaces\IHomePage.cs" />
-    <Compile Include="IoC\Interfaces\ISearchResults.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\BrowsingItemsSteps.cs" />
   </ItemGroup>
@@ -108,6 +103,10 @@
     <Analyzer Include="..\packages\xunit.analyzers.0.7.0\analyzers\dotnet\cs\xunit.analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Dependencies\Dependencies.csproj">
+      <Project>{bf9cbfa1-323f-47a8-b860-fa4dd2c31af6}</Project>
+      <Name>Dependencies</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Framework\Framework.csproj">
       <Project>{2f1e3c50-4905-4d0d-aa21-ff9f0218bf46}</Project>
       <Name>Framework</Name>
