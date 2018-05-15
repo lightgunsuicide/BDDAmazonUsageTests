@@ -5,24 +5,29 @@ using Dependencies.Interfaces;
 using FluentAssertions;
 using System.Collections.Generic;
 using System.Configuration;
+using Ninject;
+using System.Reflection;
 
 namespace BDD.Steps
 {
     [Binding]
     public class BrowsingItemsSteps
     {
-        IHomePage _homePage;
-        ISearchResults _searchResults;
-        ICategoryPage _categoryPage;
-        IAuthorPage _authorPage;
+        private IHomePage _homePage;
+        private ISearchResults _searchResults;
+        private ICategoryPage _categoryPage;
+        private IAuthorPage _authorPage;
 
-        string _categoryName;
+        private string _categoryName;
 
         [Given(@"I open amazon in a browser")]
         public void GivenIOpenAmazonInABrowser()
-
         {
-            IWebDriver driver =  ScenarioContext.Current.Get<IWebDriver>("driver");
+            var kernel = new StandardKernel();
+            kernel.Load(Assembly.GetExecutingAssembly());
+            var driver = kernel.Get<IWebDriver>();
+            var _homePage = kernel.Get<IHomePage>();
+
             _homePage.launchSite(ConfigurationManager.AppSettings["baseUrl"]);
         }
         

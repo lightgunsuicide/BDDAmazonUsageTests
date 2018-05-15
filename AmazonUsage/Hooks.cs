@@ -14,14 +14,14 @@ namespace AmazonUsage
         [BeforeScenario]
         public void BeforeScenario()
         {
-            ChromeDriver driver = new ChromeDriver();
-            ScenarioContext.Current.Add("driver", driver);
+            //ChromeDriver driver = new ChromeDriver();
+            //ScenarioContext.Current.Add("driver", driver);
         }
 
         [AfterScenario]
         public void AfterScenario()
         {
-            ScenarioContext.Current.Get<IWebDriver>("driver").Dispose();
+            //ScenarioContext.Current.Get<IWebDriver>("driver").Dispose();
         }
     }
 }
