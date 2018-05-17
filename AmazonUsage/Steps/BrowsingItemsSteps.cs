@@ -26,7 +26,7 @@ namespace BDD.Steps
             var kernel = new StandardKernel();
             kernel.Load(Assembly.GetExecutingAssembly());
             var driver = kernel.Get<IWebDriver>();
-            var _homePage = kernel.Get<IHomePage>();
+            _homePage = kernel.Get<IHomePage>();
 
             _homePage.launchSite(ConfigurationManager.AppSettings["baseUrl"]);
         }
@@ -64,16 +64,6 @@ namespace BDD.Steps
         public void WhenIOpenTheLinkToHisPage()
         {
            _authorPage = _searchResults.clickAuthorLink();
-        }
-
-
-        [Then(@"I see only books by ""(.*)""")]
-        public void ThenISeeOnlyBooksBy(string authorName)
-        {
-           List<string> authorNamesListed = _authorPage.getListOfAuthorsOnPage();
-            foreach (string author in authorNamesListed) {
-                author.Should().Be(authorName);
-            }
         }
         
         [Then(@"some information about ""(.*)""")]

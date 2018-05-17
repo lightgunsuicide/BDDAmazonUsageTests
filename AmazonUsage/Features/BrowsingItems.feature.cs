@@ -74,7 +74,7 @@ namespace BDDTests.Features
         [Xunit.TheoryAttribute(DisplayName="Search for a book by title")]
         [Xunit.TraitAttribute("FeatureTitle", "BrowsingItems")]
         [Xunit.TraitAttribute("Description", "Search for a book by title")]
-        [Xunit.InlineDataAttribute("selenium webdriver", "Navneesh Garg", "31.62", new string[0])]
+        [Xunit.InlineDataAttribute("selenium webdriver", "Zhimin Zhan", "23.99", new string[0])]
         public virtual void SearchForABookByTitle(string book, string author, string price, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Search for a book by title", exampleTags);
@@ -121,9 +121,7 @@ testRunner.Given("I search for \"William Gibson\"", ((string)(null)), ((TechTalk
 #line 20
 testRunner.When("I open the link to his page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 21
-testRunner.Then("I see only books by \"William Gibson\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
-#line 22
-testRunner.And("some information about \"William Gibson\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.Then("some information about \"William Gibson\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

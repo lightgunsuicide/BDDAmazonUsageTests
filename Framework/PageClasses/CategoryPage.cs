@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Dependencies.Interfaces;
+﻿using Dependencies.Interfaces;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Support.PageObjects;
 
 namespace Framework.PageClasses
 {
     public class CategoryPage : ICategoryPage
     {
+        [FindsBy(How = How.XPath, Using ="//*[@id='merchandised-content']/div[1]/h1/b")]
+        public IWebElement headerText { get; set; }
 
         public string categoryPageHeader()
         {
-            throw new NotImplementedException();
+            return headerText.Text;
         }
     }
 }
