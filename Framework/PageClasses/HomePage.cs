@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Threading;
 using Dependencies.Interfaces;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
+using OpenQA.Selenium.Support.UI;
 
 namespace Framework.PageClasses
 {
@@ -42,13 +44,14 @@ namespace Framework.PageClasses
         public ICategoryPage clickSearchForCategory()
         {
             searchButton.Click();
-            return new CategoryPage();
-            throw new NotImplementedException();
+            Thread.Sleep(5000);
+            return new CategoryPage(driver);
         }
 
         public void selectCategory(string categoryName)
         {
-            throw new NotImplementedException();
+            new SelectElement(categoryDropDown).SelectByText(categoryName);
+            
         }
 
     }

@@ -49,10 +49,10 @@ namespace BDD.Steps
         [When(@"I select ""(.*)"" from the category drop down")]
         public void WhenISelectFromTheCategoryDropDown(string categoryName)
         {
+            _categoryName = categoryName;
             _homePage.selectCategory(categoryName);
             _categoryPage = _homePage.clickSearchForCategory();
         }
-
 
         [Then(@"I should see the landing page for this category")]
         public void ThenIShouldSeeTheLandingPageForThisCategory()
