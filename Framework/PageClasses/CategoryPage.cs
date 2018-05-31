@@ -6,8 +6,14 @@ namespace Framework.PageClasses
 {
     public class CategoryPage : ICategoryPage
     {
+        IWebDriver driver;
         [FindsBy(How = How.XPath, Using ="//*[@id='merchandised-content']/div[1]/h1/b")]
         public IWebElement headerText { get; set; }
+
+        public CategoryPage(IWebDriver driver) {
+            this.driver = driver;
+            PageFactory.InitElements(driver, this);
+        }
 
         public string categoryPageHeader()
         {
