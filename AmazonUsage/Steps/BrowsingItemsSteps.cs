@@ -30,7 +30,8 @@ namespace BDD.Steps
 
             _homePage.launchSite(ConfigurationManager.AppSettings["baseUrl"]);
         }
-        
+
+        [When(@"I search for ""(.*)""")]
         [Given(@"I search for ""(.*)""")]
         public void GivenISearchFor(string searchTerm)
         {
@@ -39,7 +40,7 @@ namespace BDD.Steps
         }
 
         [Then(@"I should see results for ""(.*)"" including ""(.*)"" and ""(.*)""")]
-        public void ThenIShouldSeeResultsForIncludingAnd(string title, string author, Decimal price)
+        public void ThenIShouldSeeResultsForIncludingAnd(string title, string author, string price)
         {
             _searchResults.firstResultTitle().Should().Be(title);
             _searchResults.firstResultAuthor().Should().Be(author);

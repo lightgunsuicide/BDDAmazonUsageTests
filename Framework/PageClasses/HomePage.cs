@@ -38,13 +38,12 @@ namespace Framework.PageClasses
         public ISearchResults clickSearchButton()
         {
             searchButton.Click();
-            return new SearchResults();
+            return new SearchResults(driver);
         }
 
         public ICategoryPage clickSearchForCategory()
         {
             searchButton.Click();
-            Thread.Sleep(5000);
             return new CategoryPage(driver);
         }
 

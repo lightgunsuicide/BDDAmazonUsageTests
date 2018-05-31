@@ -4,7 +4,7 @@
     {
         string firstResultTitle();
         string firstResultAuthor();
-        decimal firstResultPrice();
+        string firstResultPrice();
         IAuthorPage clickAuthorLink();
     }
 }
