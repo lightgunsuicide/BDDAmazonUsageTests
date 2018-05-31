@@ -1,0 +1,6 @@
+C:\Projects\AmazonUsage\Dependencies\bin\Debug\Dependencies.dll
+C:\Projects\AmazonUsage\Dependencies\bin\Debug\Dependencies.pdb
+C:\Projects\AmazonUsage\Dependencies\obj\Debug\Dependencies.csproj.CoreCompileInputs.cache
+C:\Projects\AmazonUsage\Dependencies\obj\Debug\Dependencies.dll
+C:\Projects\AmazonUsage\Dependencies\obj\Debug\Dependencies.pdb
+C:\Projects\AmazonUsage\Dependencies\obj\Debug\Dependencies.csprojResolveAssemblyReference.cache

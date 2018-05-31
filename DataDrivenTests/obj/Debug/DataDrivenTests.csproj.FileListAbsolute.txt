@@ -1,0 +1,8 @@
+C:\Projects\AmazonUsage\DataDrivenTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Projects\AmazonUsage\DataDrivenTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Projects\AmazonUsage\DataDrivenTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Projects\AmazonUsage\DataDrivenTests\bin\Debug\DataDrivenTests.dll
+C:\Projects\AmazonUsage\DataDrivenTests\bin\Debug\DataDrivenTests.pdb
+C:\Projects\AmazonUsage\DataDrivenTests\obj\Debug\DataDrivenTests.csproj.CoreCompileInputs.cache
+C:\Projects\AmazonUsage\DataDrivenTests\obj\Debug\DataDrivenTests.dll
+C:\Projects\AmazonUsage\DataDrivenTests\obj\Debug\DataDrivenTests.pdb
