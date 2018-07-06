@@ -7,7 +7,8 @@ namespace Framework.PageClasses
     public class CategoryPage : ICategoryPage
     {
         IWebDriver driver;
-        [FindsBy(How = How.XPath, Using ="//*[@id='merchandised-content']/div[1]/h1/b")]
+        
+        [FindsBy(How = How.XPath, Using = "//*[@id='fst-hybrid-dynamic-h1']/div/h1/b")]
         public IWebElement headerText { get; set; }
 
         public CategoryPage(IWebDriver driver) {

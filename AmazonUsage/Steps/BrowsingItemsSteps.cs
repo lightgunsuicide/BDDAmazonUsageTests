@@ -1,9 +1,7 @@
-﻿using System;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using TechTalk.SpecFlow;
 using Dependencies.Interfaces;
 using FluentAssertions;
-using System.Collections.Generic;
 using System.Configuration;
 using Ninject;
 using System.Reflection;
@@ -25,9 +23,10 @@ namespace BDD.Steps
         {
             var kernel = new StandardKernel();
             kernel.Load(Assembly.GetExecutingAssembly());
-            var driver = kernel.Get<IWebDriver>();
+         
             _homePage = kernel.Get<IHomePage>();
-
+            _searchResults = kernel.Get<ISearchResults>();
+            _categoryPage = kernel.Get<ICategoryPage>();
             _homePage.launchSite(ConfigurationManager.AppSettings["baseUrl"]);
         }
 
@@ -70,7 +69,7 @@ namespace BDD.Steps
         [Then(@"some information about ""(.*)""")]
         public void ThenSomeInformationAbout(string authorName)
         {
-            _authorPage.authorDescription().Should().Contain(authorName);
+            _authorPage.authorDescription().Should().Contain(authorName);       
         }
     }
 }

@@ -9,8 +9,11 @@ namespace BDD.IoC
     public class Binding : NinjectModule
     {
         public override void Load() {
-            Bind<IWebDriver>().To<ChromeDriver>();
-            Bind<IHomePage>().To<HomePage>();            
+            Bind<IWebDriver>().To<ChromeDriver>().InSingletonScope();
+            Bind<IHomePage>().To<HomePage>();
+            Bind<ISearchResults>().To<SearchResults>();
+            Bind<ICategoryPage>().To<CategoryPage>();
+            Bind<IAuthorPage>().To<AuthorPage>();
          }
     }
 }
